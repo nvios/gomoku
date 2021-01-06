@@ -36,7 +36,6 @@
 <div data-role='page' data-theme='w' id='game-page' class='no-background'>
 	<div data-role='content' class='center no-padding'>
 		<div id='game-region'>
-			<header class='game-ult'>Gomoku</header>
 			<div id='main-but-group' class='game-ult'>
 				<a href='#new-game' class='button'>Restart</a>
 				<a href='#' id='undo-button' class='button'>Undo</a>
@@ -72,11 +71,11 @@
 </div>
 <div id='new-game' data-theme='a' data-role='dialog' class='long-dialog'>
 	<div data-role='header'>
-		<h4>Gomoku | New Game</h4>
+		<h4>Gomoku</h4>
 	</div>
 	<div data-role='content'>
 		<fieldset data-role="controlgroup"  data-theme='a' id='mode-select'>
-			<legend>Play Against</legend>
+			<legend>Opponent</legend>
 				<input type="radio" name="radio-choice-1" id="radio-choice-1" value="vshuman"/>
 				<label for="radio-choice-1">Buddy</label>
 
@@ -85,7 +84,7 @@
 		</fieldset> 
 		
 		<fieldset data-role="controlgroup" data-theme='a' id='color-select' class='vs-computer'>
-			<legend>Your Color</legend>
+			<legend>Color</legend>
 				<input type="radio" name="radio-choice-1" id="radio-choice-2" value="black" data-theme='a'  />
 				<label for="radio-choice-2">Very Black</label>
 				
@@ -94,7 +93,7 @@
 		</fieldset>
 		
 		<fieldset data-role="controlgroup"  data-theme='a' id='level-select'  class='vs-computer'>
-			<legend>Level of Difficulty</legend>
+			<legend>Difficulty</legend>
 			
 				<input type="radio" name="radio-choice-1" id="radio-choice-1" value="novice" />
 				<label for="radio-choice-1">Noob</label>

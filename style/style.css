@@ -211,7 +211,6 @@ header.game-ult {
 	font-weight: bold;
 	top: 0;
 	color: #ffffff;
-	text-shadow: 0 1px 1px rgba(255,255,255,0.5), 0 -1px 7px rgb(0 0 0 / 28%);
 	font-family: "Poppins", Helvetica, Arial, sans-serif;
 }
 
@@ -273,13 +272,12 @@ a {
 .button {
   display: block;
 	text-align: center;
-	text-shadow: 0 0 3px #0000005b;
   color: white !important;
   border: 2px solid rgba(255, 255, 255, 0.699);
   font-weight: 500;
   text-decoration: none;
-  padding: 8px;
-  margin: 5px 20px;
+  padding: 6px;
+  margin: 4px 20px;
   border-radius: 10px;
 }
 
@@ -288,12 +286,11 @@ a {
   color: white;
   border-color: rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.35);
-  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3);
   transition: 0.4s;
 }
 
 table.board,table.board td {
-	border: 1px dotted #ffffff9a;
+	border: none;
 	border-collapse: collapse;
 }
 
@@ -326,7 +323,7 @@ table.board,table.board td {
 
 .go-darkdot::before {
 	content: ' ';
-	background: #ffffffb7;
+	background: #ffffff;
 	display: block;
 	position: absolute;
 	border-radius: 50%;
@@ -336,6 +333,20 @@ table.board,table.board td {
 	height: 10px;
 	margin-top: -5px;
 	margin-left: -5px;
+}
+
+.go-smalldot::before {
+	content: ' ';
+	background: #ffffff9a;
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	width: 5px;
+	height: 5px;
+	margin-top: -3px;
+	margin-left: -3px;
 }
 
 .go {
@@ -348,7 +359,7 @@ table.board,table.board td {
 }
 
 .go-board .go-place.last-move>.go {
-	box-shadow: inset 0 -2px 15px rgba(255,255,255,0.3), inset -2px -1px 40px rgba(10, 10, 10, 0.301), 0 0 2px rgba(0,0,0,0.5), 0 0 10px 3px rgba(255, 255, 255, 0.5) !important;
+	box-shadow: 0 0 2px rgba(0,0,0,0.5), 0 0 10px 3px rgba(255, 255, 255, 0.5) !important;
 }
 
 #game-info>.go {

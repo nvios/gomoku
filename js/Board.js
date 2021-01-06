@@ -103,8 +103,13 @@ var Board = function(boardElm, backgroundElm){
             frag.appendChild(places[r][c].elm[0]);
         }
     }
+    for (var i = 0; i < 15; i++) {
+        for (var j = 0; j < 15; j++) {
+            places[i][j].elm.addClass("go-smalldot");
+        };
+    };
     [[7, 7],[3, 3], [3, 11], [11, 3], [11, 11]].forEach(function(e){
-        places[e[0]][e[1]].elm.addClass("go-darkdot");
+        places[e[0]][e[1]].elm.removeClass("go-smalldot").addClass("go-darkdot");
     });
 
     boardElm.append(frag);
