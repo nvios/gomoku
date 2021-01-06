@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+	<meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" href="images/icon.png"/>
+	<link rel="icon" type="image/png" href="images/icon.ico" />
+	<link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/splash_iPad_portrait.png" />
+	<link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/splash_iPad_landscape.png" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Gomoku | Luca Bontempi</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+
+	<link rel="stylesheet" href="style/w.min.css" />
+	<link rel='stylesheet' href='style/style.css' type='text/css'/>
+
+	<script src='js/Player.js' type='text/javascript'></script>
+	<script src='js/Board.js' type='text/javascript'></script>
+	<script src='js/Game.js' type='text/javascript'></script>
+	<script src='js/layout.js' type='text/javascript'></script>
+	<script src='js/interface.js' type='text/javascript'></script>
+	<script src='js/storage.js' type='text/javascript'></script>
+</head>
+<body ontouchstart="">
+<div class='fullscreen-wrapper' id='happy-outer'>
+	<img src='images/happy.png' class='happy-face screen-center'>
+</div>
+<div class='fullscreen-wrapper' id='sad-outer'>
+	<img src='images/sad.png' class='sad-face screen-center'>
+</div>
+<div data-role='page' data-theme='w' id='game-page' class='no-background'>
+	<div data-role='content' class='center no-padding'>
+		<div id='game-region'>
+			<header class='game-ult'>Gomoku</header>
+			<div id='main-but-group' class='game-ult'>
+				<a href='#new-game' class='button'>Restart</a>
+				<a href='#' id='undo-button' class='button'>Undo</a>
+			</div>
+			<div class='go-board' data-enhance=false>
+				
+			</div>
+			<table class='board' data-enhance=false>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div id='game-won' data-theme='a' data-role='dialog'>
+	<div data-role='header'>
+		<h4>You Win!</h4>
+	</div>
+	<div data-role='content'>
+		<div id='win-content'>
+			You have won the game! Play again?
+		</div>
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><button class='back-to-game'  data-theme='c'>Back</button></div>
+			<div class="ui-block-b">
+				<a href='#new-game' data-rel='dialog' data-role='button'>
+					New Game
+				</a>
+			</div>	   
+		</fieldset>
+	</div>
+</div>
+<div id='new-game' data-theme='a' data-role='dialog' class='long-dialog'>
+	<div data-role='header'>
+		<h4>Gomoku | New Game</h4>
+	</div>
+	<div data-role='content'>
+		<fieldset data-role="controlgroup"  data-theme='a' id='mode-select'>
+			<legend>Play Against</legend>
+				<input type="radio" name="radio-choice-1" id="radio-choice-1" value="vshuman"/>
+				<label for="radio-choice-1">Buddy</label>
+
+				<input type="radio" name="radio-choice-1" id="radio-choice-2" value="vscomputer"  />
+				<label for="radio-choice-2">AI</label>
+		</fieldset> 
+		
+		<fieldset data-role="controlgroup" data-theme='a' id='color-select' class='vs-computer'>
+			<legend>Your Color</legend>
+				<input type="radio" name="radio-choice-1" id="radio-choice-2" value="black" data-theme='a'  />
+				<label for="radio-choice-2">Very Black</label>
+				
+				<input type="radio" name="radio-choice-1" id="radio-choice-1" value="white" data-theme='a' />
+				<label for="radio-choice-1">Just White</label>
+		</fieldset>
+		
+		<fieldset data-role="controlgroup"  data-theme='a' id='level-select'  class='vs-computer'>
+			<legend>Level of Difficulty</legend>
+			
+				<input type="radio" name="radio-choice-1" id="radio-choice-1" value="novice" />
+				<label for="radio-choice-1">Noob</label>
+
+				<input type="radio" name="radio-choice-1" id="radio-choice-2" value="medium"  />
+				<label for="radio-choice-2">Regular</label>
+
+				<input type="radio" name="radio-choice-1" id="radio-choice-3" value="expert"  />
+				<label for="radio-choice-3">Pro</label>
+				
+		</fieldset>
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><button class='back-to-game'  data-theme='c'>Back</button></div>
+			<div class="ui-block-b"><button id='start-game'  data-theme='b'>Start</button></div>	   
+		</fieldset>
+	</div>
+</div>
+
+</div>
+</body>
+</html>
