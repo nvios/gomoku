@@ -187,8 +187,10 @@ body {
 }
 
 .happy-face {
-	margin-left: -160px;
-	margin-top: -120px;
+	margin-left: -218px;
+	margin-top: -65px;
+	box-shadow: 0 0 20px 10px #0000003b;
+	border-radius: 10px;
 }
 
 .sad-face {
