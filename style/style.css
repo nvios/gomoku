@@ -187,15 +187,18 @@ body {
 }
 
 .happy-face {
-	margin-left: -218px;
-	margin-top: -65px;
+	margin-left: -240px;
+  margin-top: -69px;
 	box-shadow: 0 0 20px 10px #0000003b;
 	border-radius: 10px;
 }
 
 .sad-face {
-	margin-left: -105px;
-	margin-top: -110px;
+	margin-left: -221px;
+	margin-top: -50px;
+	width: 440px;
+	box-shadow: 0 0 20px 10px #0000003b;
+	border-radius: 10px;
 }
 
 .game-ult {

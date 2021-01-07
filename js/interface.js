@@ -125,14 +125,14 @@ function showWinDialog(game){
     }else{
         if(game.getCurrentPlayer() instanceof HumanPlayer){
             $("#game-won h4").html('You Won!');
-            $("#win-content").html('Great dude! You won the game. Play again?');
+            $("#win-content").html('Great dude! You won the game. Can you do it again?');
             gameInfo.value='You won.'
-            $('#sad-outer').fadeIn(500);
+            $('#sad-outer').fadeIn(800);
         }else{
             $("#game-won h4").html('You Lost.');
-            $("#win-content").html("Damn. We can't let AI take over. Wanna try again?");
+            $("#win-content").html("Oh damn! We can't let AI take over. Try again?");
             gameInfo.value='AI won.'
-            $('#happy-outer').fadeIn(500);
+            $('#happy-outer').fadeIn(800);
         }
     }
 }
