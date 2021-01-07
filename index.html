@@ -40,6 +40,9 @@
 				<a href='#new-game' class='button'>Restart</a>
 				<a href='#' id='undo-button' class='button'>Undo</a>
 			</div>
+			<div id='other-but-group' class='game-ult'>
+				<a href='#help-page' id='help-button' class='button'>About</a>
+			</div>
 			<div class='go-board' data-enhance=false>
 				
 			</div>
@@ -86,10 +89,10 @@
 		<fieldset data-role="controlgroup" data-theme='a' id='color-select' class='vs-computer'>
 			<legend>Color</legend>
 				<input type="radio" name="radio-choice-1" id="radio-choice-2" value="black" data-theme='a'  />
-				<label for="radio-choice-2">Very Black</label>
+				<label for="radio-choice-2">Dark Side of the Moon Black</label>
 				
 				<input type="radio" name="radio-choice-1" id="radio-choice-1" value="white" data-theme='a' />
-				<label for="radio-choice-1">Just White</label>
+				<label for="radio-choice-1">Snow White</label>
 		</fieldset>
 		
 		<fieldset data-role="controlgroup"  data-theme='a' id='level-select'  class='vs-computer'>
@@ -111,7 +114,13 @@
 		</fieldset>
 	</div>
 </div>
-
+<div data-role='dialog' data-theme='a' id='help-page'>
+	<div data-role='header'>
+		<h4>About</h4>
+	</div>
+	<div data-role='content' class='thin-content'>
+		<p>This game was developed by Luca Bontempi. Check out other projects on this <a href='https://nvios.github.io/gomoku/' target="_blank">website</a> and <a href='https://github.com/Nvios' target="_blank">Github</a></p>
+	</div>
 </div>
 </body>
 </html>

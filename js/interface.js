@@ -125,13 +125,13 @@ function showWinDialog(game){
     }else{
         if(game.getCurrentPlayer() instanceof HumanPlayer){
             $("#game-won h4").html('You Won!');
-            $("#win-content").html('You won the game. Play again?');
+            $("#win-content").html('Great dude! You won the game. Play again?');
             gameInfo.value='You won.'
             $('#sad-outer').fadeIn(500);
         }else{
             $("#game-won h4").html('You Lost.');
-            $("#win-content").html('Meh. You lost to the computer. Play again?');
-            gameInfo.value='Computer won.'
+            $("#win-content").html("Damn. We can't let AI take over. Wanna try again?");
+            gameInfo.value='AI won.'
             $('#happy-outer').fadeIn(500);
         }
     }

@@ -454,9 +454,9 @@ table.board,table.board td {
 }
 
 .warning>.go {
-	-webkit-box-shadow: 0 0 20px red;
-	box-shadow: 0 0 20px red;
-	background: rgba(255,0,0,0.7);
+	-webkit-box-shadow: 0 0 20px #00ffff;
+	box-shadow: 0 0 20px #00ffff;
+	background: #00d5e4;
 	height: 100%;
 	width: 100%;
 

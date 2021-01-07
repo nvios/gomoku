@@ -32,15 +32,15 @@ function adjustSizeGen() {
             hsize = Math.min(~~((vspace - 15) / 15 / 2), ~~((avaiw - 22) / 15 / 2));
             gameRegion.css({
                 'padding': hsize + 6,
-                'margin-left': -((2 * hsize + 1) * 15) / 2,
+                'margin-left': -((2 * hsize + 1) * 15 - 2) / 2,
                 'padding-top': 100 + hsize,
                 'padding-bottom': 50 + hsize,
                 'margin-top': -(15 * hsize + 82)
             });
             tds.css('padding', hsize);
             board.css({
-                'top': 100,
-                'bottom': 50,
+                'top': 106,
+                'bottom': 60,
                 'left': 6,
                 'right': 6
             });
@@ -51,12 +51,12 @@ function adjustSizeGen() {
             });
             mainButs.css({
                 'top': 6,
-                'right': 6,
+                'right': hsize * 15 - 74,
                 'width': 160
             });
             otherButs.css({
                 'bottom': 6,
-                'right': 6,
+                'right': hsize * 15 - 74,
                 'width': 160
             });
         } else {
